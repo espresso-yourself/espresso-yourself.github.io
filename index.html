@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
+
+  <head>
+      <style>
+          #image {
+            display: none;
+          }
+          
+      </style>
+  </head>
   <body>
     <h1 id="demo">Are you a parking ticket?</h1>
-    <button type="button" onclick='document.getElementById("demo").innerHTML=
-      "..because you got FINE written all over you ;)"'>Click Me!</button>
+
     
+    <button type="button" 
+    onclick="show()" id="btnID">Click Me!</button>
+    
+    <iframe id="image" src="https://giphy.com/embed/hMKjvTYlSaFCU" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/love-pandawhale-sitepandawhalecom-hMKjvTYlSaFCU"></a></p>
+     
+            
+
+   <script>
+       function show() {
+
+           /* Access image by id and change
+           the display property to block*/
+           document.getElementById("demo").innerHTML=
+             "..because you got FINE written all over you ;)<br></br>"
+             
+           document.getElementById('image')
+                   .style.display = "block";
+
+
+           document.getElementById('btnID')
+                   .style.display = "none";
+       }
+   </script>
   </body>
 </html>
