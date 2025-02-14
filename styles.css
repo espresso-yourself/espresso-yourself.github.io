@@ -1,0 +1,56 @@
+* {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+    
+}
+
+.background-color {
+    background-color: black;
+
+}
+
+h1 {
+    color: white;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 1rem;
+
+}
+
+#image {
+    display: none;
+}
+
+
+
+img {
+    
+    /* width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px; */
+}
+
+.lebron-img {
+    height: 100px;
+    background-repeat: repeat;
+}
+
+
+.background-repeat {
+    background-image: url("assets/lebron-head.png");
+    background-size: 10%;
+}
