@@ -20,7 +20,7 @@ h1 {
 .center {
     margin: auto;
     width: auto;
-    height: 50%
+    height:50%;
     padding: 10px;
 }
 
@@ -42,8 +42,8 @@ img {
     
     width: auto;
     height: auto;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 700px;
+    max-height: 700px;
 }
 
 .lebron-img {
