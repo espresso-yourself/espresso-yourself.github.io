@@ -10,7 +10,7 @@
 </head>
 
 
-<body>
+<body class="">
 
     <div class="center">
     <h1 id="demo">Are you Lebron James?</h1>
@@ -18,13 +18,21 @@
     <button type="button"id="btnID" onclick="show()"class="btn btn-warning">Why?</button>
     <div class="image">
         <img id="image" src="assets/Lebron.png" alt="">
+        <img id="image2" src="assets/luka.jpeg" alt="">
     </div>
- 
+    <button type="button" onclick="again()"class="btn btn-warning again" id="btn2">Try Again?</button>
+    <button type="button" onclick="showAgain()"class="btn btn-warning again" id="btn3">..Why?</button>
     </div>
 
     <script>
+
+        const audio = new Audio('assets/luther.mp3'); 
+        const audio2 = new Audio('assets/lutherSZA.mp3'); 
+
         function show() {
             
+
+            document.getElementById("btn2").style.display = "block";
    
            document.getElementById("demo").innerHTML=
              "..Because"
@@ -32,11 +40,12 @@
            document.getElementById('image')
                    .style.display = "block";
 
-
            document.getElementById('btnID')
                    .style.display = "none";
 
-            const audio = new Audio('assets/luther.mp3'); 
+            
+
+            
             audio.currentTime = 10;
 
     // Play the audio
@@ -48,6 +57,53 @@
     setTimeout(() => {
         audio.pause();
         audio.currentTime = 0; // Reset the audio
+    }, 9500); // 10000ms = 10s
+}
+
+function again() {
+
+    audio.pause();
+    document.getElementById("demo").innerHTML=
+            "Did you just come from the Mavericks?"
+
+    document.getElementById("btn3").style.display="block"
+    document.getElementById("btn2").style.display="none"
+
+
+    document.getElementById("image").style.display="none"
+}
+
+function showAgain() {
+            
+
+   
+           document.getElementById("demo").innerHTML=
+             "..Because"
+            document.getElementById("demo").style.marginTop="5rem"
+             
+             document.getElementById('image')
+             .style.display = "none";
+           document.getElementById('image2')
+                   .style.display = "block";
+
+           document.getElementById('btn3', 'btn2')
+                   .style.display = "none";
+
+            
+
+    
+            
+            audio2.currentTime = 15;
+
+    // Play the audio
+    audio2.play().catch(error => {
+        console.log("Audio playback failed:", error);
+    });
+
+    // Stop the audio after 10 seconds (from 30s to 40s)
+    setTimeout(() => {
+        audio2.pause();
+        audio2.currentTime = 0; // Reset the audio
     }, 10000); // 10000ms = 10s
 }
     
@@ -55,5 +111,4 @@
 
 </body>
 </div>
-    
 </html>
