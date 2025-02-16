@@ -19,12 +19,12 @@ h1 {
 
 .center {
     margin: auto;
-    width: auto;
     height:50%;
     padding: 10px;
 }
 
 .image {
+
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -36,6 +36,20 @@ h1 {
     display: none;
 }
 
+#image2 {
+    display: none;
+
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
 
 
 img {
@@ -44,6 +58,7 @@ img {
     height: auto;
     max-width: 700px;
     max-height: 700px;
+
 }
 
 .lebron-img {
@@ -55,4 +70,14 @@ img {
 .background-repeat {
     background-image: url("assets/lebron-head.png");
     background-size: 10%;
+}
+
+#btn2 {
+    display: none;
+    margin: 1rem auto;
+}
+
+#btn3 {
+    display: none;
+    margin: 1rem auto;
 }
